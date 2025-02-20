@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../2.png">
+    <title>Project</title>
+    <style>
+        #Dv{
+           background-color: darkmagenta;
+           padding: 30px; 
+           text-align: center;
+        }#Pi{
+            background-color: darkgreen;
+            font-size: 40px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }#btnR{
+            text-align: right;
+        }
+    </style>
+</head>
+<body style="background-color: cadetblue;"><!-- onload="window.alert('Conected...')"-->
+    <h1 style="color: crimson;">OJLATO</h1>
+    <h5 style="color: darkolivegreen;">Test a JavaScript</h5>
+    <!-- <p style="color: purple;"><b>clicked a <i style="color:darkred;"><b>f12</b></i></b></p> -->
+    <hr><div id="demo" style="width: 125px;height: 90px;background-color: burlywood;"><ul id="1"></ul></div>
+    <br><input type="text" onfocus="highlight(this)" onblur="highlightt(this)"><!--onclick="alert('Hi')"-->
+    <button id="btn" type="button">Button</button><button style="margin: 10px; border-color: blueviolet;" type="button" id="btn2">Test Alert</button>
+    <br><p id="po"></p>
+    <select onchange="alert('You changed Value of Select Tag')">
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <br><script>
+        function highlight(element) {
+            element.style.backgroundColor="yellow";
+        }function highlightt(element) {
+            element.style.backgroundColor="rgb(0, 139, 63";
+        }
+    </script>
+    <br><p id="pi"></p><div id="Dv"><p id="Pi">Click Me!!!</p></div>
+    <button id="btnR">Remove Event in Div</button>
+    <!-- <br/><br/><h3 id="test"></h3> -->
+
+    <!-- <script src="/src/maim.js"></script> -->
+    <script src="/LearnJs.js"></script>
+</body>
+</html>
