@@ -3,16 +3,16 @@ console.log("Connected...");
 var Name,number;
 Name="Omid";
 number='09355073770';
-//_________________//انواع پرینت___________________
+//_________________//انواع پرینت_________________
 // console.log(Name,number);
 // document.write(number);
 // window.alert(Name);
-//_________________//متغیرهای دوگانه و چندگانه str___________________
-var person={
+//_________________//متغیرهای دوگانه و چندگانه str_________________
+let person={
     fname:"Omid",
     lname:"Jalali"
 };(person.fname+" "+person.lname);
-//__________________//متغیرهای عددی__________________
+//_________________//متغیرهای عددی_________________
 var Num=69;
 var Num2=66;
 if(Num==Num2){
@@ -33,10 +33,10 @@ if(num==num2)//اگر بخوایم دوتا شرط بذاریم ک ترکیب ع
 //______________________/مدل متغیر سه گانه در یک خط
 Num==Num2 ? isEqual=true : isEqual=false;
 ("The Equal match is: "+isEqual);//در کل عملگر شرطی در سه حالت استفاده میشود
-//__________//متغیر های بولین(یا درست یا غلط)____________
+//_________________//متغیر های بولین(یا درست یا غلط)_________________
 var isComplete=false;
 isEqual=(Num==Num2)
-//_________________//آرایه ها(هم مقدار عددی هم اس تی آر و هم بولین دریافت میکنند)___________________
+//_________________//آرایه ها(هم مقدار عددی هم اس تی آر و هم بولین دریافت میکنند)_________________
 var names=new Array("Omid","Mostafa","Sadeq"); 
     (names[0]);
 var myarray=("Ojlato",20,true,"Kashmar",17.5);
@@ -51,7 +51,7 @@ color.push("White"); //به آخر لیست مقدار اضافه میکنه
 var newcolor=color.slice(); //از لیست کپی برداری میکنه و تغییرات ما روی کپی اعمال میشه
 var result=color.indexOf("Black",0); //جستجو کردن در لیست با ذکر نام مورد نظر و اینکه از کجا شروع کنه
 var arraystr=color.join(" | "); //تمام مقادیر لیست رو بهم متصل میکنه و به اس تی آر تبدیل میکنه و با علامت دلخواه از هم جدا میشن
-//_________________//و اعمال روزهای هفته switch دستور___________________
+//_________________//و اعمال روزهای هفته switch دستور_________________
 var today=new Date().getDay();
 var day;
 switch (today) {
@@ -79,7 +79,7 @@ switch (today) {
     default:
         day="Your Value Not Found"
 }("Today Is: "+day);
-//_________________//تعریف تابع دارای نام___________________
+//_________________//تعریف تابع دارای نام_________________
 function prj(a,b) {
     var res;
     a>b ? res=["avali",a] : res=["dovomi",b];
@@ -101,7 +101,7 @@ var Big=(function(a,b) {
     a>b ? res1=["avali",a] : res1=["dovomi",b];
     return res1;
 })(1/2,7/9);(Big);
-//_________________//انواع متغیرها که دو نوع هستند___________________
+//_________________//انواع متغیرها که دو نوع هستند_________________
 var Var1="Variable-1"; //globally variale
 function myprj() {
     var Var2="Variable-2"; //locally variable
@@ -119,7 +119,7 @@ function scope() {
         (local);
     }(local);
 }scope();
-//_________________//اشیا___________________
+//_________________//اشیا_________________
 var Person={Fname:"OMID",Lname:"JALALI TORSHIZI"};
 var Person2=new Object();
     Person2.phonenumber=9355073770;
@@ -153,7 +153,7 @@ let Course2=new Course("Python","Amir Amiri",2,false,20000);
 let Course3=new Course("HTML,CSS","Milad Dehyami",2,false,10000);
 let Course4=new Course("Front-End","Qasem Bassaki",1,false,5000);
 let Course5=new Course("NodeJS","Daniyal Setayesh",1,true,500);
-//_________________//for حلقه___________________
+//_________________//for حلقه_________________
 const Cars=["Benz","BMW","Land Crouse","Lexus","Aoudi"];
 for(let i=0; i<5; i++) {
     ("The Car Brand Is: "+Cars[i]); //for of
@@ -164,7 +164,7 @@ const car={name:"Haima S5",ProductYear:1401,color:"White",isABS:true};
 for(key in car) {
     (car[key]);
 }
-//_________________//while,do حلقه___________________
+//_________________//while,do حلقه_________________
 let j=0
 while(Cars[j]) {
     (Cars[j]);
@@ -180,7 +180,7 @@ for(let j=1; j<15; j++) {
         continue; //break;
     }
     (j);
-}
+} //_________________//DOM_________________
 const friends=["Sadeq","Qasem","Mostafa","Mohammad","Omid"]
 function me() {
     for (const item of friends) {
@@ -190,18 +190,20 @@ function me() {
     document.getElementById("1").appendChild(node)
     }
 };me();
+//_________________//Events_________________
 const DIV=document.getElementById("demo");
 DIV.onmouseover=function() {
     DIV.style.backgroundColor="chartreuse";
 };DIV.onmouseout=function() {
     DIV.style.backgroundColor="goldenrod";
-};
+}; //______________________
 const element=document.getElementById("btn");
 element.addEventListener('click',function() {
     document.getElementById("po").innerHTML=Date();
 }); //display
 // function display() {
 //     document.getElementById("po").innerHTML=Date();};
+//______________________
 const e_btn=document.getElementById("btn2")
 e_btn.addEventListener('click',f);
 e_btn.addEventListener('click',f2)
@@ -209,7 +211,7 @@ function f() {
     alert("First Function Happend");
 };function f2() {
     alert("second Function Happend");
-};
+}; //______________________
 let n1=8;
 let n2=3;
 const el=document.getElementById("btn2");
@@ -218,7 +220,8 @@ el.addEventListener('click',function() {
 });
 function func(a,b) {
     document.getElementById("pi").innerHTML="8x3="+a*b
-};const g=document.getElementById("Dv");
+}; //____________\\
+const g=document.getElementById("Dv");
 g.addEventListener('click',function() {
     alert("You Clicked on Tag Div")
 })//,true);
@@ -230,8 +233,14 @@ const bt=document.getElementById("btnR");
 bt.addEventListener('click',del)
 function del() {
     g.removeEventListener('mousemove',random);
-};
-
+}; //____________\\
 g.addEventListener('mousemove',random);
 function random() {
     document.getElementById("Dv").innerHTML=Math.random();}
+//__________________forEach__________________
+const nomber=[19,52,60,83];
+nomber.forEach(function(item,index,arr) {
+    console.log(`item= ${item} index= ${index}`)
+    console.log(arr)
+})
+//__________________A Countinue to ajax.js & ajax.html file__________________
