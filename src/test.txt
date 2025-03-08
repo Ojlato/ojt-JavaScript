@@ -1,0 +1,8 @@
+Hello Ajax...!!!
+
+
+is test by ajax to js
+
+
+
+and opened,readed file .txt

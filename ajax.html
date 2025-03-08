@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title>AJAXS</title>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <button style="margin: 10px; border-color: darkgoldenrod;" type="button" id="1">Test Ajax</button><br>
+    <div id="2"></div>
+    <button id="btn" style="margin: 10px; border-color: blueviolet;" type="button">Click To Load XML</button><br>
+    <table id="tbl"></table>
+    <button id="getfetch" style="margin: 10px; border-color: chartreuse;" type="button">Click Fetch</button>
+    <div id="output"></div>
+
+    <br><div class="container">
+        <h2>Ajax Post Request Form</h2>
+        <form id="frmSend">
+            <div class="form-group">
+                <!-- <label>FirstName:</label> -->
+                <input class="form-control" id="title" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <!-- <label>LastName:</label> -->
+                <!-- <input class="form-control" id="LastName" placeholder="Enter LastName"> -->
+                <textarea id="body" class="form-control" placeholder="Body"></textarea>
+            </div>
+            <!-- <div class="form-group">
+                <label>JobTitle:</label>
+                <input class="form-control" id="JobTitle" placeholder="Enter JobTitle">
+            </div> -->
+            <input type="submit" class="btn btn-secondary" value="Submit">
+        </form>
+    </div>
+
+    <script src="/src/js/ajax.js"></script>
+</body>
+</html>
